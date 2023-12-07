@@ -1,0 +1,31 @@
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px;
+    height: 100%;
+}
+
+.imagen{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.img-producto{
+    height: 300px;
+}
+
+.body{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.item-description{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+p{
+    margin: 0;
+}

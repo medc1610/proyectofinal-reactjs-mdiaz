@@ -1,6 +1,6 @@
-import './carrito.css'
+import './Carrito.css'
 import { useState } from 'react';
-
+import logoCart from '../../../assets/carrito.webp'
 
 
 
@@ -12,7 +12,7 @@ export function Carrito(){
     return (
         <>
             <div className={'carrito-container'} >
-                <img className={'carrito-img'} src={'src/assets/carrito.webp'} alt={'carrito'}/>
+                <img className={'carrito-img'} src={logoCart} alt={'carrito'}/>
                 <div className={'carrito-cantidad'}>
                     {state}
                 </div>
@@ -21,3 +21,4 @@ export function Carrito(){
         </>
     )
 }
+

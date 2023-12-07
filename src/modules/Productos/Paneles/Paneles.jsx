@@ -1,0 +1,5 @@
+export function Paneles() {
+    return (
+        <></>
+    )
+}
