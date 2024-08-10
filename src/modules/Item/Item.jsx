@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import './Item.css'
+import 'Item.css'
 export const Item= ({item}) => {
     
     return (
