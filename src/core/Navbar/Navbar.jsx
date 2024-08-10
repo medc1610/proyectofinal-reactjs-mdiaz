@@ -15,7 +15,7 @@ export function NavbarComponent() {
                 </div>
                 <div className={'home'}>
                     <Button variant="secondary">
-                        <Link to={'/'} className={'links-buttons'}>HOOOME</Link>
+                        <Link to={'/'} className={'links-buttons'}>HOME</Link>
                     </Button>
                 </div>
                 <div className={'nosotros'}>
