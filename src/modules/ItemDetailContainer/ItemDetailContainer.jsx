@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import array from '../../json/array.json';
 import { ItemDetail } from '../ItemDetail/ItemDetail.jsx';
-
+import {db} from '../../services/firebase/index'
+import { getDoc, doc } from 'firebase/firestore';
 export const ItemDetailContainer= () => {
 
     const [item, setItem] = useState([])
     const {id} = useParams()
 
     useEffect(() => {
-        const promesa = new Promise ((resolve) => {
-                resolve(array.find((item) => item.id === parseInt(id)))
-            
-        });
-        promesa.then((data) => {
-            setItem(data)
+        getDoc(doc(db, "productos", id)).then((reponse) => {
+            const product = {id: reponse.id, ...reponse.data()}
+            setItem(product)
         })
+            .catch((error) => {
+                console.log(error)
+            })
     }, [id] );
 
     return (

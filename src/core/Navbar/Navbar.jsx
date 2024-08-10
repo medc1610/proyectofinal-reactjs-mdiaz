@@ -8,7 +8,7 @@ import logoNav from '../../assets/logo.png'
 
 export function NavbarComponent() {
     return (
-        <>
+
             <div className={'grid-navbar'}>
                 <div className={'logo'}>
                 <Link to={'/'} className={'links-buttons'}> <img  src={logoNav} alt={'logo'}/></Link>
@@ -55,7 +55,6 @@ export function NavbarComponent() {
 
             </div>
 
-        </>
 
 
     )
