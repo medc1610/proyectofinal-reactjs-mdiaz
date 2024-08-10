@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import 'Item.css'
+import './item.css'
 export const Item= ({item}) => {
     
     return (
@@ -18,7 +18,7 @@ export const Item= ({item}) => {
                 Ver mas..
                 </Link>
             </Card.Link>
-            
+
             </Card.Body>
         </Card>
         </>
