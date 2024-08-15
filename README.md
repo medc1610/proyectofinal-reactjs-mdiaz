@@ -16,6 +16,7 @@ para la realizacion del proyecto se utilizaron  las siguientes dependencias.
 
 ## Dependencias de desarrolo
 para la realizacion del proyecto se utilizaron las siguientes dependencias de desarrollo.
+
 | Plugin | Version |
 | ------ | ------ |
 |@types/react|^18.2.15|
